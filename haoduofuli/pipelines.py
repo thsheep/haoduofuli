@@ -10,7 +10,7 @@ import datetime
 class HaoduofuliPipeline(object):
 
     def __init__(self):
-        Client = MongoClient('mongodb://haoduofuli:haoduofuli123@103.200.97.19:19942/haoduofuli')
+        Client = MongoClient('mongodb://haoduofuli:haoduofuli123@host:prot/haoduofuli')
         db = Client['haoduofuli']
         self.save = db['haoduofuli']
     def process_item(self, item, spider):
