@@ -10,6 +10,7 @@ import datetime
 class HaoduofuliPipeline(object):
 
     def __init__(self):
+        ##如果参考前一篇博文 记得建立账号 密码和数据哦！
         Client = MongoClient('mongodb://haoduofuli:haoduofuli123@host:prot/haoduofuli')
         db = Client['haoduofuli']
         self.save = db['haoduofuli']
